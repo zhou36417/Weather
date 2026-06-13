@@ -6,6 +6,7 @@ import json
 import os
 import sys
 from pathlib import Path
+from typing import Optional, Union
 
 if os.name == "nt":
     os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
@@ -54,7 +55,7 @@ def resolve_device(device_arg: str) -> torch.device:
     return torch.device(device_arg)
 
 
-def load_checkpoint(path: str | Path, device: torch.device) -> dict:
+def load_checkpoint(path: Union[str, Path], device: torch.device) -> dict:
     path = Path(path)
     try:
         return torch.load(path, map_location=device, weights_only=True)
@@ -62,7 +63,7 @@ def load_checkpoint(path: str | Path, device: torch.device) -> dict:
         return torch.load(path, map_location=device)
 
 
-def load_model(checkpoint_path: str | Path, device: torch.device) -> tuple[nn.Module, dict]:
+def load_model(checkpoint_path: Union[str, Path], device: torch.device) -> tuple[nn.Module, dict]:
     checkpoint = load_checkpoint(checkpoint_path, device)
     model = build_model(
         checkpoint["model_name"],
@@ -77,7 +78,7 @@ def load_model(checkpoint_path: str | Path, device: torch.device) -> tuple[nn.Mo
 
 @torch.no_grad()
 def collect_probabilities(
-    checkpoint_path: str | Path,
+    checkpoint_path: Union[str, Path],
     csv_path: Path,
     project_root: Path,
     batch_size: int,
@@ -116,7 +117,7 @@ def confusion_from_probabilities(probs: torch.Tensor, targets: torch.Tensor, num
     return confusion
 
 
-def build_weight_grid(fixed_weight_b: float | None, search_step: float) -> list[float]:
+def build_weight_grid(fixed_weight_b: Optional[float], search_step: float) -> list[float]:
     if fixed_weight_b is not None:
         if not 0.0 <= fixed_weight_b <= 1.0:
             raise ValueError("--weight-b must be in [0, 1].")

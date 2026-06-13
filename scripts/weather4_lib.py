@@ -5,7 +5,7 @@ import json
 import os
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, Union
 
 # The local Windows Anaconda environment in this workspace exposes duplicate
 # OpenMP runtimes when torch is imported. Keep the workaround process-local.
@@ -40,7 +40,7 @@ class LabelMap:
 
 
 class WeatherCsvDataset(Dataset):
-    def __init__(self, csv_path: str | Path, project_root: str | Path, transform=None) -> None:
+    def __init__(self, csv_path: Union[str, Path], project_root: Union[str, Path], transform=None) -> None:
         self.csv_path = Path(csv_path)
         self.project_root = Path(project_root)
         self.transform = transform
@@ -63,7 +63,7 @@ class WeatherCsvDataset(Dataset):
         return image, label
 
 
-def read_label_map(path: str | Path) -> LabelMap:
+def read_label_map(path: Union[str, Path]) -> LabelMap:
     raw = json.loads(Path(path).read_text(encoding="utf-8"))
     id2label = {int(k): v for k, v in raw["id2label"].items()}
     label2id = {k: int(v) for k, v in raw["label2id"].items()}
@@ -193,7 +193,7 @@ def build_model(
     return model
 
 
-def count_labels(csv_path: str | Path, num_classes: int) -> list[int]:
+def count_labels(csv_path: Union[str, Path], num_classes: int) -> list[int]:
     frame = pd.read_csv(csv_path)
     counts = [0] * num_classes
     for label in frame["label"].astype(int).tolist():
@@ -244,7 +244,7 @@ def metrics_from_confusion(confusion: torch.Tensor, class_names: list[str]) -> d
     }
 
 
-def write_confusion_csv(path: str | Path, confusion: torch.Tensor, class_names: list[str]) -> None:
+def write_confusion_csv(path: Union[str, Path], confusion: torch.Tensor, class_names: list[str]) -> None:
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as f:
@@ -254,7 +254,7 @@ def write_confusion_csv(path: str | Path, confusion: torch.Tensor, class_names: 
             writer.writerow([name, *[int(v) for v in confusion[idx].tolist()]])
 
 
-def list_images(input_path: str | Path) -> list[Path]:
+def list_images(input_path: Union[str, Path]) -> list[Path]:
     path = Path(input_path)
     if path.is_file():
         return [path]

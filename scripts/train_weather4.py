@@ -7,6 +7,7 @@ import os
 import random
 import sys
 from pathlib import Path
+from typing import Optional
 
 if os.name == "nt":
     os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
@@ -105,7 +106,7 @@ def resolve_device(device_arg: str) -> torch.device:
     return torch.device(device_arg)
 
 
-def batch_limit_reached(batch_idx: int, max_batches: int | None) -> bool:
+def batch_limit_reached(batch_idx: int, max_batches: Optional[int]) -> bool:
     return max_batches is not None and batch_idx >= max_batches
 
 
@@ -117,7 +118,7 @@ def train_one_epoch(
     device: torch.device,
     scaler: torch.amp.GradScaler,
     use_amp: bool,
-    max_batches: int | None,
+    max_batches: Optional[int],
 ) -> float:
     model.train()
     running_loss = 0.0
@@ -150,7 +151,7 @@ def validate(
     criterion: nn.Module,
     device: torch.device,
     class_names: list[str],
-    max_batches: int | None,
+    max_batches: Optional[int],
 ) -> tuple[float, dict, torch.Tensor]:
     model.eval()
     confusion = torch.zeros((len(class_names), len(class_names)), dtype=torch.long)
