@@ -1,0 +1,189 @@
+{
+  "device": "mps",
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "models": [
+    "convnext_tiny",
+    "efficientnet_b3"
+  ],
+  "images": 16413,
+  "checkpoints": {
+    "convnext_tiny": [
+      {
+        "fold": 0,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/convnext_tiny/fold_0/best_model.pth",
+        "model_name": "convnext_tiny",
+        "image_size": 224,
+        "epoch": 12
+      },
+      {
+        "fold": 1,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/convnext_tiny/fold_1/best_model.pth",
+        "model_name": "convnext_tiny",
+        "image_size": 224,
+        "epoch": 14
+      },
+      {
+        "fold": 2,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/convnext_tiny/fold_2/best_model.pth",
+        "model_name": "convnext_tiny",
+        "image_size": 224,
+        "epoch": 10
+      },
+      {
+        "fold": 3,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/convnext_tiny/fold_3/best_model.pth",
+        "model_name": "convnext_tiny",
+        "image_size": 224,
+        "epoch": 15
+      },
+      {
+        "fold": 4,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/convnext_tiny/fold_4/best_model.pth",
+        "model_name": "convnext_tiny",
+        "image_size": 224,
+        "epoch": 14
+      }
+    ],
+    "efficientnet_b3": [
+      {
+        "fold": 0,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_0/best_model.pth",
+        "model_name": "efficientnet_b3",
+        "image_size": 300,
+        "epoch": 11
+      },
+      {
+        "fold": 1,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_1/best_model.pth",
+        "model_name": "efficientnet_b3",
+        "image_size": 300,
+        "epoch": 8
+      },
+      {
+        "fold": 2,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_2/best_model.pth",
+        "model_name": "efficientnet_b3",
+        "image_size": 300,
+        "epoch": 13
+      },
+      {
+        "fold": 3,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_3/best_model.pth",
+        "model_name": "efficientnet_b3",
+        "image_size": 300,
+        "epoch": 13
+      },
+      {
+        "fold": 4,
+        "checkpoint": "/Users/zhoupengfei/Desktop/caip/runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_4/best_model.pth",
+        "model_name": "efficientnet_b3",
+        "image_size": 300,
+        "epoch": 15
+      }
+    ]
+  },
+  "model_metrics": {
+    "convnext_tiny": {
+      "accuracy": 0.9451044903430208,
+      "macro_f1": 0.9425417991638514,
+      "per_class": {
+        "sunny": {
+          "precision": 0.9518052869116699,
+          "recall": 0.9524193548387097,
+          "f1": 0.9521122218639149,
+          "support": 6200
+        },
+        "cloudy": {
+          "precision": 0.9390394088669951,
+          "recall": 0.9464701318851824,
+          "f1": 0.9427401282744765,
+          "support": 6445
+        },
+        "rainy": {
+          "precision": 0.9384368308351178,
+          "recall": 0.9192448872574724,
+          "f1": 0.9287417218543046,
+          "support": 1907
+        },
+        "snowy": {
+          "precision": 0.9506775067750678,
+          "recall": 0.9425040300913488,
+          "f1": 0.9465731246627093,
+          "support": 1861
+        }
+      }
+    },
+    "efficientnet_b3": {
+      "accuracy": 0.9406567964418449,
+      "macro_f1": 0.9401437149791226,
+      "per_class": {
+        "sunny": {
+          "precision": 0.9453024453024453,
+          "recall": 0.947741935483871,
+          "f1": 0.946520618556701,
+          "support": 6200
+        },
+        "cloudy": {
+          "precision": 0.9285496183206107,
+          "recall": 0.943677269200931,
+          "f1": 0.9360523278183918,
+          "support": 6445
+        },
+        "rainy": {
+          "precision": 0.9472252448313384,
+          "recall": 0.912952281069743,
+          "f1": 0.9297730307076101,
+          "support": 1907
+        },
+        "snowy": {
+          "precision": 0.9618573797678275,
+          "recall": 0.9349811929070392,
+          "f1": 0.9482288828337875,
+          "support": 1861
+        }
+      }
+    }
+  },
+  "best_ensemble": {
+    "accuracy": 0.9519283494790715,
+    "macro_f1": 0.9509263240114418,
+    "per_class": {
+      "sunny": {
+        "precision": 0.956815984531099,
+        "recall": 0.957741935483871,
+        "f1": 0.9572787360954378,
+        "support": 6200
+      },
+      "cloudy": {
+        "precision": 0.9437874366456765,
+        "recall": 0.9534522885958107,
+        "f1": 0.9485952454461254,
+        "support": 6445
+      },
+      "rainy": {
+        "precision": 0.9506702412868633,
+        "recall": 0.9297325642370216,
+        "f1": 0.940084835630965,
+        "support": 1907
+      },
+      "snowy": {
+        "precision": 0.965592572364828,
+        "recall": 0.9500268672756582,
+        "f1": 0.9577464788732394,
+        "support": 1861
+      }
+    },
+    "weight_a": 0.51,
+    "weight_b": 0.49,
+    "name_a": "convnext_tiny",
+    "name_b": "efficientnet_b3",
+    "images": 16413,
+    "search_step": 0.01
+  }
+}

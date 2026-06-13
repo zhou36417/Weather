@@ -1,0 +1,110 @@
+{
+  "source_csv": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4_from_dir_70_15_15\\all.csv",
+  "output_dir": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4_from_dir_5fold",
+  "n_splits": 5,
+  "seed": 2026,
+  "rows": 16533,
+  "distribution": {
+    "cloudy": 6486,
+    "rainy": 1925,
+    "snowy": 1875,
+    "sunny": 6247
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_csv": "data/processed/weather4_from_dir_5fold/fold_0_train.csv",
+      "val_csv": "data/processed/weather4_from_dir_5fold/fold_0_val.csv",
+      "train_rows": 13226,
+      "val_rows": 3307,
+      "train_distribution": {
+        "cloudy": 5188,
+        "rainy": 1540,
+        "snowy": 1500,
+        "sunny": 4998
+      },
+      "val_distribution": {
+        "cloudy": 1298,
+        "rainy": 385,
+        "snowy": 375,
+        "sunny": 1249
+      }
+    },
+    {
+      "fold": 1,
+      "train_csv": "data/processed/weather4_from_dir_5fold/fold_1_train.csv",
+      "val_csv": "data/processed/weather4_from_dir_5fold/fold_1_val.csv",
+      "train_rows": 13226,
+      "val_rows": 3307,
+      "train_distribution": {
+        "cloudy": 5189,
+        "rainy": 1540,
+        "snowy": 1500,
+        "sunny": 4997
+      },
+      "val_distribution": {
+        "cloudy": 1297,
+        "rainy": 385,
+        "snowy": 375,
+        "sunny": 1250
+      }
+    },
+    {
+      "fold": 2,
+      "train_csv": "data/processed/weather4_from_dir_5fold/fold_2_train.csv",
+      "val_csv": "data/processed/weather4_from_dir_5fold/fold_2_val.csv",
+      "train_rows": 13226,
+      "val_rows": 3307,
+      "train_distribution": {
+        "cloudy": 5189,
+        "rainy": 1540,
+        "snowy": 1500,
+        "sunny": 4997
+      },
+      "val_distribution": {
+        "cloudy": 1297,
+        "rainy": 385,
+        "snowy": 375,
+        "sunny": 1250
+      }
+    },
+    {
+      "fold": 3,
+      "train_csv": "data/processed/weather4_from_dir_5fold/fold_3_train.csv",
+      "val_csv": "data/processed/weather4_from_dir_5fold/fold_3_val.csv",
+      "train_rows": 13227,
+      "val_rows": 3306,
+      "train_distribution": {
+        "cloudy": 5189,
+        "rainy": 1540,
+        "snowy": 1500,
+        "sunny": 4998
+      },
+      "val_distribution": {
+        "cloudy": 1297,
+        "rainy": 385,
+        "snowy": 375,
+        "sunny": 1249
+      }
+    },
+    {
+      "fold": 4,
+      "train_csv": "data/processed/weather4_from_dir_5fold/fold_4_train.csv",
+      "val_csv": "data/processed/weather4_from_dir_5fold/fold_4_val.csv",
+      "train_rows": 13227,
+      "val_rows": 3306,
+      "train_distribution": {
+        "cloudy": 5189,
+        "rainy": 1540,
+        "snowy": 1500,
+        "sunny": 4998
+      },
+      "val_distribution": {
+        "cloudy": 1297,
+        "rainy": 385,
+        "snowy": 375,
+        "sunny": 1249
+      }
+    }
+  ]
+}

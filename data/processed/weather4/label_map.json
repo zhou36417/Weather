@@ -1,0 +1,23 @@
+{
+  "id2label": {
+    "0": "sunny",
+    "1": "cloudy",
+    "2": "rainy",
+    "3": "snowy"
+  },
+  "label2id": {
+    "sunny": 0,
+    "cloudy": 1,
+    "rainy": 2,
+    "snowy": 3
+  },
+  "source_to_target": {
+    "0": "cloudy",
+    "2": "rainy",
+    "3": "snowy",
+    "4": "sunny"
+  },
+  "dropped_source_labels": {
+    "1": "foggy or hazy"
+  }
+}

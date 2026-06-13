@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+.venv-gpu/
+venv/
+env/
+
+# IDE / OS
+.claude/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.pdf
+
+# Large datasets and generated images
+data/data/
+data/external/raw/*.parquet
+data/processed/**/images/
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Training outputs
+runs/**
+!runs/
+!runs/weather4_kfold_generalize_partial_oof/
+!runs/weather4_kfold_generalize_partial_oof/*.json
+!runs/weather4_kfold_generalize_partial_oof/*.csv
+
+# Model checkpoints and binary artifacts
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Logs and generated review pages
+*.log
+*.html

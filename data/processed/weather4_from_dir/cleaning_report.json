@@ -1,0 +1,788 @@
+{
+  "input_root": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\data",
+  "project_root": "C:\\Users\\Z Pengfei\\Desktop\\caip",
+  "class_counts": {
+    "cloudy": 6702,
+    "foggy": 1261,
+    "rainy": 1927,
+    "snowy": 1875,
+    "sunny": 6274
+  },
+  "dropped_classes": {
+    "foggy": "not an official target class",
+    "hazy": "not an official target class"
+  },
+  "drop_counts": {
+    "dropped_class:foggy": 1261,
+    "duplicate_label_conflict": 59,
+    "exact_duplicate": 186
+  },
+  "raw_target_records": 16778,
+  "strict_records": 16533,
+  "exact_duplicate_groups": 185,
+  "duplicate_label_conflict_groups": 29,
+  "duplicate_label_conflicts": [
+    {
+      "md5": "10abcf170a7903e140e73d38147d6158",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1771.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "10abcf170a7903e140e73d38147d6158"
+        },
+        {
+          "image_path": "data/data/sunny/s1894.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "10abcf170a7903e140e73d38147d6158"
+        }
+      ]
+    },
+    {
+      "md5": "19062adec7e4e2149d6018ad602dd9fc",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1098.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "19062adec7e4e2149d6018ad602dd9fc"
+        },
+        {
+          "image_path": "data/data/sunny/s1161.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "19062adec7e4e2149d6018ad602dd9fc"
+        }
+      ]
+    },
+    {
+      "md5": "245225a3ba1d7c27c725067d3a662a1c",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy day-143.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 296,
+          "md5": "245225a3ba1d7c27c725067d3a662a1c"
+        },
+        {
+          "image_path": "data/data/sunny/sunny weather-0.jpeg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 474,
+          "height": 296,
+          "md5": "245225a3ba1d7c27c725067d3a662a1c"
+        }
+      ]
+    },
+    {
+      "md5": "26949603ea13c8e7ecc882d3aee92e32",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy day-95.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 302,
+          "md5": "26949603ea13c8e7ecc882d3aee92e32"
+        },
+        {
+          "image_path": "data/data/cloudy/cloudy weather-50.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 302,
+          "md5": "26949603ea13c8e7ecc882d3aee92e32"
+        },
+        {
+          "image_path": "data/data/rainy/rainy weather-37.jpeg",
+          "label": 2,
+          "label_name": "rainy",
+          "source": "class_directory",
+          "source_class": "rainy",
+          "width": 474,
+          "height": 302,
+          "md5": "26949603ea13c8e7ecc882d3aee92e32"
+        }
+      ]
+    },
+    {
+      "md5": "27fb389c6e8311a6e4ac5945c56c8856",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1386.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "27fb389c6e8311a6e4ac5945c56c8856"
+        },
+        {
+          "image_path": "data/data/sunny/s1487.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "27fb389c6e8311a6e4ac5945c56c8856"
+        }
+      ]
+    },
+    {
+      "md5": "29256ea9c31d49bf4d814bfc093a0803",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1251.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "29256ea9c31d49bf4d814bfc093a0803"
+        },
+        {
+          "image_path": "data/data/sunny/s0684.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "29256ea9c31d49bf4d814bfc093a0803"
+        }
+      ]
+    },
+    {
+      "md5": "2eaf83e2d644b581595232688146399f",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy weather-18.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 355,
+          "md5": "2eaf83e2d644b581595232688146399f"
+        },
+        {
+          "image_path": "data/data/sunny/sunny weather-99.jpeg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 474,
+          "height": 355,
+          "md5": "2eaf83e2d644b581595232688146399f"
+        }
+      ]
+    },
+    {
+      "md5": "334b4eb12037477c8b5fd929de3a3cc8",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy weather-23.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 296,
+          "md5": "334b4eb12037477c8b5fd929de3a3cc8"
+        },
+        {
+          "image_path": "data/data/sunny/sunny weather-20.jpeg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 474,
+          "height": 296,
+          "md5": "334b4eb12037477c8b5fd929de3a3cc8"
+        }
+      ]
+    },
+    {
+      "md5": "3355a6fac0d22a29025d7b140a65b702",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1231.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "3355a6fac0d22a29025d7b140a65b702"
+        },
+        {
+          "image_path": "data/data/sunny/s1317.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "3355a6fac0d22a29025d7b140a65b702"
+        }
+      ]
+    },
+    {
+      "md5": "353faeb2cd7a92974e3d1eb4c4963a6a",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c2255.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "353faeb2cd7a92974e3d1eb4c4963a6a"
+        },
+        {
+          "image_path": "data/data/sunny/s0235.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "353faeb2cd7a92974e3d1eb4c4963a6a"
+        }
+      ]
+    },
+    {
+      "md5": "49714ff150b4081974e1b2377cfbac2d",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy weather-66.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 355,
+          "md5": "49714ff150b4081974e1b2377cfbac2d"
+        },
+        {
+          "image_path": "data/data/sunny/sunny weather-111.jpeg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 474,
+          "height": 355,
+          "md5": "49714ff150b4081974e1b2377cfbac2d"
+        }
+      ]
+    },
+    {
+      "md5": "52e6d3f6eb57438a8cb111a801f989d9",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1860.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "52e6d3f6eb57438a8cb111a801f989d9"
+        },
+        {
+          "image_path": "data/data/sunny/s1983.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "52e6d3f6eb57438a8cb111a801f989d9"
+        }
+      ]
+    },
+    {
+      "md5": "60116f74d3242f10134ddb5f8d74156d",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c2808.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "60116f74d3242f10134ddb5f8d74156d"
+        },
+        {
+          "image_path": "data/data/sunny/s2986.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "60116f74d3242f10134ddb5f8d74156d"
+        }
+      ]
+    },
+    {
+      "md5": "628319353f217878b5dd19da9f9bf119",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy weather-146.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 470,
+          "md5": "628319353f217878b5dd19da9f9bf119"
+        },
+        {
+          "image_path": "data/data/sunny/sunny weather-101.jpeg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 474,
+          "height": 470,
+          "md5": "628319353f217878b5dd19da9f9bf119"
+        }
+      ]
+    },
+    {
+      "md5": "62f2eccecd7e33958e9c357825a4f8b1",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c2436.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "62f2eccecd7e33958e9c357825a4f8b1"
+        },
+        {
+          "image_path": "data/data/sunny/s0248.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "62f2eccecd7e33958e9c357825a4f8b1"
+        }
+      ]
+    },
+    {
+      "md5": "729fad2030cb8fc9a456d96962623e36",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c2170.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "729fad2030cb8fc9a456d96962623e36"
+        },
+        {
+          "image_path": "data/data/sunny/s0225.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "729fad2030cb8fc9a456d96962623e36"
+        }
+      ]
+    },
+    {
+      "md5": "7d12427041e5f73a159febcbf3f0b12e",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c4974.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "7d12427041e5f73a159febcbf3f0b12e"
+        },
+        {
+          "image_path": "data/data/sunny/s4982.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "7d12427041e5f73a159febcbf3f0b12e"
+        }
+      ]
+    },
+    {
+      "md5": "9402e65fe71dc896dc33127f145c43de",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c4469.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "9402e65fe71dc896dc33127f145c43de"
+        },
+        {
+          "image_path": "data/data/sunny/s0345.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "9402e65fe71dc896dc33127f145c43de"
+        }
+      ]
+    },
+    {
+      "md5": "985ea6401454b68688054ae4fc7d55f7",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c2854.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "985ea6401454b68688054ae4fc7d55f7"
+        },
+        {
+          "image_path": "data/data/sunny/s3029.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "985ea6401454b68688054ae4fc7d55f7"
+        }
+      ]
+    },
+    {
+      "md5": "a60e5f615e5a58c081195faa6a779952",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1544.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "a60e5f615e5a58c081195faa6a779952"
+        },
+        {
+          "image_path": "data/data/sunny/s1658.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "a60e5f615e5a58c081195faa6a779952"
+        }
+      ]
+    },
+    {
+      "md5": "ab265619d2bfb2dffd32ba4a71533b1d",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy weather-122.png",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 262,
+          "md5": "ab265619d2bfb2dffd32ba4a71533b1d"
+        },
+        {
+          "image_path": "data/data/sunny/sunny weather-50.png",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 474,
+          "height": 262,
+          "md5": "ab265619d2bfb2dffd32ba4a71533b1d"
+        }
+      ]
+    },
+    {
+      "md5": "adb4508be41463e6215a19d4f0c09962",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy weather-73.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 266,
+          "md5": "adb4508be41463e6215a19d4f0c09962"
+        },
+        {
+          "image_path": "data/data/rainy/rainy weather-76.jpeg",
+          "label": 2,
+          "label_name": "rainy",
+          "source": "class_directory",
+          "source_class": "rainy",
+          "width": 474,
+          "height": 266,
+          "md5": "adb4508be41463e6215a19d4f0c09962"
+        }
+      ]
+    },
+    {
+      "md5": "ae4e033ced6422681e2542b2148b700c",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c3590.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "ae4e033ced6422681e2542b2148b700c"
+        },
+        {
+          "image_path": "data/data/sunny/s0318.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "ae4e033ced6422681e2542b2148b700c"
+        }
+      ]
+    },
+    {
+      "md5": "baac3532ec93feed2802a4bdc8ca6dae",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1942.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "baac3532ec93feed2802a4bdc8ca6dae"
+        },
+        {
+          "image_path": "data/data/sunny/s2082.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "baac3532ec93feed2802a4bdc8ca6dae"
+        }
+      ]
+    },
+    {
+      "md5": "d9abea32a250cb41ba12ca4e44f044fb",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c4553.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "d9abea32a250cb41ba12ca4e44f044fb"
+        },
+        {
+          "image_path": "data/data/sunny/s4646.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "d9abea32a250cb41ba12ca4e44f044fb"
+        }
+      ]
+    },
+    {
+      "md5": "e50aca4d2df85a81e1e8d9f6b55b5c8f",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1598.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "e50aca4d2df85a81e1e8d9f6b55b5c8f"
+        },
+        {
+          "image_path": "data/data/sunny/s0194.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "e50aca4d2df85a81e1e8d9f6b55b5c8f"
+        }
+      ]
+    },
+    {
+      "md5": "e68f68b60757d15106ed29d09f08be93",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c2238.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "e68f68b60757d15106ed29d09f08be93"
+        },
+        {
+          "image_path": "data/data/sunny/s0231.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "e68f68b60757d15106ed29d09f08be93"
+        }
+      ]
+    },
+    {
+      "md5": "e9e050e6060192526fe78450b1d0c504",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/c1894.jpg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 200,
+          "height": 200,
+          "md5": "e9e050e6060192526fe78450b1d0c504"
+        },
+        {
+          "image_path": "data/data/sunny/s2029.jpg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 200,
+          "height": 200,
+          "md5": "e9e050e6060192526fe78450b1d0c504"
+        }
+      ]
+    },
+    {
+      "md5": "f84b5c5cbe5c6353e48040c1d9859969",
+      "records": [
+        {
+          "image_path": "data/data/cloudy/cloudy weather-15.jpeg",
+          "label": 1,
+          "label_name": "cloudy",
+          "source": "class_directory",
+          "source_class": "cloudy",
+          "width": 474,
+          "height": 248,
+          "md5": "f84b5c5cbe5c6353e48040c1d9859969"
+        },
+        {
+          "image_path": "data/data/sunny/sunny weather-44.jpeg",
+          "label": 0,
+          "label_name": "sunny",
+          "source": "class_directory",
+          "source_class": "sunny",
+          "width": 474,
+          "height": 248,
+          "md5": "f84b5c5cbe5c6353e48040c1d9859969"
+        }
+      ]
+    }
+  ],
+  "duplicate_label_conflicts_total": 29,
+  "unsupported_files": [],
+  "unsupported_files_total": 0,
+  "output_root": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4_from_dir",
+  "kept_images": 16533,
+  "train_images": 13226,
+  "val_images": 3307,
+  "target_counts": {
+    "cloudy": 6486,
+    "rainy": 1925,
+    "snowy": 1875,
+    "sunny": 6247
+  },
+  "train_counts": {
+    "cloudy": 5189,
+    "rainy": 1540,
+    "snowy": 1500,
+    "sunny": 4997
+  },
+  "val_counts": {
+    "cloudy": 1297,
+    "rainy": 385,
+    "snowy": 375,
+    "sunny": 1250
+  },
+  "val_size": 0.2,
+  "seed": 42
+}

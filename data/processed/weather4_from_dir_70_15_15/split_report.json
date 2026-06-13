@@ -1,0 +1,39 @@
+{
+  "source_metadata": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4_from_dir\\metadata_strict.csv",
+  "source_label_map": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4_from_dir\\label_map.json",
+  "output_dir": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4_from_dir_70_15_15",
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "total": 16533,
+  "train": 11573,
+  "val": 2480,
+  "test": 2480,
+  "total_counts": {
+    "cloudy": 6486,
+    "rainy": 1925,
+    "snowy": 1875,
+    "sunny": 6247
+  },
+  "train_counts": {
+    "cloudy": 4540,
+    "rainy": 1347,
+    "snowy": 1313,
+    "sunny": 4373
+  },
+  "val_counts": {
+    "cloudy": 973,
+    "rainy": 289,
+    "snowy": 281,
+    "sunny": 937
+  },
+  "test_counts": {
+    "cloudy": 973,
+    "rainy": 289,
+    "snowy": 281,
+    "sunny": 937
+  }
+}

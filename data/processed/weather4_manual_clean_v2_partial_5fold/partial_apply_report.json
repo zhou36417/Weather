@@ -1,0 +1,68 @@
+{
+  "source_csv": "data/processed/weather4_manual_clean_5fold/folds.csv",
+  "review_csv": "runs/weather4_error_review_manual_clean_v2_conf095/manual_review_template.csv",
+  "output_dir": "data/processed/weather4_manual_clean_v2_partial_5fold",
+  "review_rows": 247,
+  "filled_decisions": 82,
+  "source_rows": 16439,
+  "output_rows": 16413,
+  "dropped_rows": 26,
+  "relabeled_rows": 10,
+  "kept_reviewed_rows": 46,
+  "blank_review_rows_treated_as_keep": 165,
+  "before_distribution": {
+    "cloudy": 6449,
+    "rainy": 1911,
+    "snowy": 1865,
+    "sunny": 6214
+  },
+  "after_distribution": {
+    "cloudy": 6445,
+    "rainy": 1907,
+    "snowy": 1861,
+    "sunny": 6200
+  },
+  "relabel_distribution": {
+    "cloudy->sunny": 2,
+    "rainy->cloudy": 1,
+    "snowy->sunny": 1,
+    "sunny->cloudy": 6
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_rows": 13129,
+      "val_rows": 3284,
+      "train_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_0_train.csv",
+      "val_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_0_val.csv"
+    },
+    {
+      "fold": 1,
+      "train_rows": 13131,
+      "val_rows": 3282,
+      "train_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_1_train.csv",
+      "val_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_1_val.csv"
+    },
+    {
+      "fold": 2,
+      "train_rows": 13131,
+      "val_rows": 3282,
+      "train_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_2_train.csv",
+      "val_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_2_val.csv"
+    },
+    {
+      "fold": 3,
+      "train_rows": 13133,
+      "val_rows": 3280,
+      "train_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_3_train.csv",
+      "val_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_3_val.csv"
+    },
+    {
+      "fold": 4,
+      "train_rows": 13128,
+      "val_rows": 3285,
+      "train_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_4_train.csv",
+      "val_csv": "data/processed/weather4_manual_clean_v2_partial_5fold/fold_4_val.csv"
+    }
+  ]
+}

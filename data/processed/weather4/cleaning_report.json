@@ -1,0 +1,243 @@
+{
+  "input_files": [
+    "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\external\\raw\\weathernet05_0000.parquet",
+    "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\external\\raw\\weathernet05_0001.parquet"
+  ],
+  "output_root": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4",
+  "total_source_rows": 18039,
+  "kept_images": 16562,
+  "train_images": 13249,
+  "val_images": 3313,
+  "source_counts": {
+    "0": 6702,
+    "1": 1261,
+    "2": 1927,
+    "3": 1875,
+    "4": 6274
+  },
+  "source_label_names": {
+    "0": "cloudy or overcast",
+    "1": "foggy or hazy",
+    "2": "rain or storm",
+    "3": "snow or frosty",
+    "4": "sun or clear"
+  },
+  "target_counts": {
+    "cloudy": 6515,
+    "rainy": 1925,
+    "snowy": 1875,
+    "sunny": 6247
+  },
+  "drop_counts": {
+    "exact_duplicate": 216,
+    "non_target_label": 1261
+  },
+  "duplicate_label_conflicts": [
+    {
+      "md5": "26949603ea13c8e7ecc882d3aee92e32",
+      "first_label": "cloudy",
+      "duplicate_label": "rainy",
+      "first_path": "1 (199).jpeg",
+      "duplicate_path": "rainy weather-37.jpeg"
+    },
+    {
+      "md5": "adb4508be41463e6215a19d4f0c09962",
+      "first_label": "cloudy",
+      "duplicate_label": "rainy",
+      "first_path": "1 (222).jpeg",
+      "duplicate_path": "rainy weather-76.jpeg"
+    },
+    {
+      "md5": "e50aca4d2df85a81e1e8d9f6b55b5c8f",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2700).jpg",
+      "duplicate_path": "s0194.jpg"
+    },
+    {
+      "md5": "729fad2030cb8fc9a456d96962623e36",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (3272).jpg",
+      "duplicate_path": "s0225.jpg"
+    },
+    {
+      "md5": "e68f68b60757d15106ed29d09f08be93",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (3340).jpg",
+      "duplicate_path": "s0231.jpg"
+    },
+    {
+      "md5": "353faeb2cd7a92974e3d1eb4c4963a6a",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (3357).jpg",
+      "duplicate_path": "s0235.jpg"
+    },
+    {
+      "md5": "62f2eccecd7e33958e9c357825a4f8b1",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (3538).jpg",
+      "duplicate_path": "s0248.jpg"
+    },
+    {
+      "md5": "ae4e033ced6422681e2542b2148b700c",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (4692).jpg",
+      "duplicate_path": "s0318.jpg"
+    },
+    {
+      "md5": "9402e65fe71dc896dc33127f145c43de",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (5571).jpg",
+      "duplicate_path": "s0345.jpg"
+    },
+    {
+      "md5": "29256ea9c31d49bf4d814bfc093a0803",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2353).jpg",
+      "duplicate_path": "s0684.jpg"
+    },
+    {
+      "md5": "19062adec7e4e2149d6018ad602dd9fc",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2200).jpg",
+      "duplicate_path": "s1161.jpg"
+    },
+    {
+      "md5": "3355a6fac0d22a29025d7b140a65b702",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2333).jpg",
+      "duplicate_path": "s1317.jpg"
+    },
+    {
+      "md5": "27fb389c6e8311a6e4ac5945c56c8856",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2488).jpg",
+      "duplicate_path": "s1487.jpg"
+    },
+    {
+      "md5": "a60e5f615e5a58c081195faa6a779952",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2646).jpg",
+      "duplicate_path": "s1658.jpg"
+    },
+    {
+      "md5": "10abcf170a7903e140e73d38147d6158",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2873).jpg",
+      "duplicate_path": "s1894.jpg"
+    },
+    {
+      "md5": "52e6d3f6eb57438a8cb111a801f989d9",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2962).jpg",
+      "duplicate_path": "s1983.jpg"
+    },
+    {
+      "md5": "e9e050e6060192526fe78450b1d0c504",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (2996).jpg",
+      "duplicate_path": "s2029.jpg"
+    },
+    {
+      "md5": "baac3532ec93feed2802a4bdc8ca6dae",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (3044).jpg",
+      "duplicate_path": "s2082.jpg"
+    },
+    {
+      "md5": "60116f74d3242f10134ddb5f8d74156d",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (3910).jpg",
+      "duplicate_path": "s2986.jpg"
+    },
+    {
+      "md5": "985ea6401454b68688054ae4fc7d55f7",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (3956).jpg",
+      "duplicate_path": "s3029.jpg"
+    },
+    {
+      "md5": "d9abea32a250cb41ba12ca4e44f044fb",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (5655).jpg",
+      "duplicate_path": "s4646.jpg"
+    },
+    {
+      "md5": "7d12427041e5f73a159febcbf3f0b12e",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (6076).jpg",
+      "duplicate_path": "s4982.jpg"
+    },
+    {
+      "md5": "245225a3ba1d7c27c725067d3a662a1c",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (142).jpeg",
+      "duplicate_path": "sunny weather-0.jpeg"
+    },
+    {
+      "md5": "628319353f217878b5dd19da9f9bf119",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (293).jpeg",
+      "duplicate_path": "sunny weather-101.jpeg"
+    },
+    {
+      "md5": "49714ff150b4081974e1b2377cfbac2d",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (215).jpeg",
+      "duplicate_path": "sunny weather-111.jpeg"
+    },
+    {
+      "md5": "334b4eb12037477c8b5fd929de3a3cc8",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (172).jpeg",
+      "duplicate_path": "sunny weather-20.jpeg"
+    },
+    {
+      "md5": "f84b5c5cbe5c6353e48040c1d9859969",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (164).jpeg",
+      "duplicate_path": "sunny weather-44.jpeg"
+    },
+    {
+      "md5": "ab265619d2bfb2dffd32ba4a71533b1d",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (3).png",
+      "duplicate_path": "sunny weather-50.png"
+    },
+    {
+      "md5": "2eaf83e2d644b581595232688146399f",
+      "first_label": "cloudy",
+      "duplicate_label": "sunny",
+      "first_path": "1 (167).jpeg",
+      "duplicate_path": "sunny weather-99.jpeg"
+    }
+  ],
+  "duplicate_label_conflicts_total": 29,
+  "val_size": 0.2,
+  "seed": 42
+}

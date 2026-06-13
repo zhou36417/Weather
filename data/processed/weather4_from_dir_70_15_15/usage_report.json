@@ -1,0 +1,42 @@
+{
+  "train": 11573,
+  "val": 2480,
+  "test": 2480,
+  "trainval": 14053,
+  "all": 16533,
+  "train_counts": {
+    "cloudy": 4540,
+    "rainy": 1347,
+    "snowy": 1313,
+    "sunny": 4373
+  },
+  "val_counts": {
+    "cloudy": 973,
+    "rainy": 289,
+    "snowy": 281,
+    "sunny": 937
+  },
+  "test_counts": {
+    "cloudy": 973,
+    "rainy": 289,
+    "snowy": 281,
+    "sunny": 937
+  },
+  "trainval_counts": {
+    "cloudy": 5513,
+    "rainy": 1636,
+    "snowy": 1594,
+    "sunny": 5310
+  },
+  "all_counts": {
+    "cloudy": 6486,
+    "rainy": 1925,
+    "snowy": 1875,
+    "sunny": 6247
+  },
+  "usage": {
+    "model_selection": "train.csv + val.csv, keep test.csv untouched",
+    "final_after_selection": "trainval.csv, then evaluate once on test.csv",
+    "final_submission_pretrain": "all.csv only after no more local test evaluation is needed"
+  }
+}

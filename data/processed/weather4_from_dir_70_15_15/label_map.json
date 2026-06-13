@@ -1,0 +1,24 @@
+{
+  "id2label": {
+    "0": "sunny",
+    "1": "cloudy",
+    "2": "rainy",
+    "3": "snowy"
+  },
+  "label2id": {
+    "sunny": 0,
+    "cloudy": 1,
+    "rainy": 2,
+    "snowy": 3
+  },
+  "class_to_target": {
+    "sunny": "sunny",
+    "cloudy": "cloudy",
+    "rainy": "rainy",
+    "snowy": "snowy"
+  },
+  "dropped_classes": {
+    "foggy": "not an official target class",
+    "hazy": "not an official target class"
+  }
+}

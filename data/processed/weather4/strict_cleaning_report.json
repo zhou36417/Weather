@@ -1,0 +1,57 @@
+{
+  "input_metadata": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4\\metadata.csv",
+  "output_metadata": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4\\metadata_strict.csv",
+  "removed_conflicting_exact_duplicates": 29,
+  "kept_images": 16533,
+  "train_images": 13226,
+  "val_images": 3307,
+  "target_counts": {
+    "cloudy": 6486,
+    "rainy": 1925,
+    "snowy": 1875,
+    "sunny": 6247
+  },
+  "train_counts": {
+    "cloudy": 5189,
+    "rainy": 1540,
+    "snowy": 1500,
+    "sunny": 4997
+  },
+  "val_counts": {
+    "cloudy": 1297,
+    "rainy": 385,
+    "snowy": 375,
+    "sunny": 1250
+  },
+  "conflict_md5": [
+    "10abcf170a7903e140e73d38147d6158",
+    "19062adec7e4e2149d6018ad602dd9fc",
+    "245225a3ba1d7c27c725067d3a662a1c",
+    "26949603ea13c8e7ecc882d3aee92e32",
+    "27fb389c6e8311a6e4ac5945c56c8856",
+    "29256ea9c31d49bf4d814bfc093a0803",
+    "2eaf83e2d644b581595232688146399f",
+    "334b4eb12037477c8b5fd929de3a3cc8",
+    "3355a6fac0d22a29025d7b140a65b702",
+    "353faeb2cd7a92974e3d1eb4c4963a6a",
+    "49714ff150b4081974e1b2377cfbac2d",
+    "52e6d3f6eb57438a8cb111a801f989d9",
+    "60116f74d3242f10134ddb5f8d74156d",
+    "628319353f217878b5dd19da9f9bf119",
+    "62f2eccecd7e33958e9c357825a4f8b1",
+    "729fad2030cb8fc9a456d96962623e36",
+    "7d12427041e5f73a159febcbf3f0b12e",
+    "9402e65fe71dc896dc33127f145c43de",
+    "985ea6401454b68688054ae4fc7d55f7",
+    "a60e5f615e5a58c081195faa6a779952",
+    "ab265619d2bfb2dffd32ba4a71533b1d",
+    "adb4508be41463e6215a19d4f0c09962",
+    "ae4e033ced6422681e2542b2148b700c",
+    "baac3532ec93feed2802a4bdc8ca6dae",
+    "d9abea32a250cb41ba12ca4e44f044fb",
+    "e50aca4d2df85a81e1e8d9f6b55b5c8f",
+    "e68f68b60757d15106ed29d09f08be93",
+    "e9e050e6060192526fe78450b1d0c504",
+    "f84b5c5cbe5c6353e48040c1d9859969"
+  ]
+}

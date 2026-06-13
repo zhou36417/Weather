@@ -1,0 +1,31 @@
+{
+  "source_csv": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4_from_dir_70_15_15\\all.csv",
+  "review_csv": "C:\\Users\\Z Pengfei\\Desktop\\caip\\runs\\weather4_error_review_conf099\\manual_review.csv",
+  "output_csv": "C:\\Users\\Z Pengfei\\Desktop\\caip\\data\\processed\\weather4_manual_clean\\all_clean.csv",
+  "source_rows": 16533,
+  "review_rows": 167,
+  "output_rows": 16439,
+  "dropped_rows": 94,
+  "relabeled_rows": 15,
+  "kept_reviewed_rows": 58,
+  "before_distribution": {
+    "cloudy": 6486,
+    "rainy": 1925,
+    "snowy": 1875,
+    "sunny": 6247
+  },
+  "after_distribution": {
+    "cloudy": 6449,
+    "rainy": 1911,
+    "snowy": 1865,
+    "sunny": 6214
+  },
+  "relabel_distribution": {
+    "cloudy->sunny": 3,
+    "rainy->cloudy": 2,
+    "rainy->snowy": 1,
+    "rainy->sunny": 1,
+    "snowy->rainy": 2,
+    "sunny->cloudy": 6
+  }
+}
