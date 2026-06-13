@@ -22,22 +22,37 @@ Thumbs.db
 
 # Large datasets and generated images
 data/data/
+!data/data/
+!data/data/**
 data/external/raw/*.parquet
 data/processed/**/images/
 *.jpg
 *.jpeg
 *.png
 *.gif
+!data/data/**/*.jpg
+!data/data/**/*.jpeg
+!data/data/**/*.png
+!data/data/**/*.gif
 
 # Training outputs
 runs/**
 !runs/
+!runs/weather4_kfold_generalize_partial/
+!runs/weather4_kfold_generalize_partial/convnext_tiny/
+!runs/weather4_kfold_generalize_partial/convnext_tiny/fold_*/
+!runs/weather4_kfold_generalize_partial/convnext_tiny/fold_*/best_model.pth
+!runs/weather4_kfold_generalize_partial/efficientnet_b3/
+!runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_*/
+!runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_*/best_model.pth
 !runs/weather4_kfold_generalize_partial_oof/
 !runs/weather4_kfold_generalize_partial_oof/*.json
 !runs/weather4_kfold_generalize_partial_oof/*.csv
 
 # Model checkpoints and binary artifacts
 *.pth
+!runs/weather4_kfold_generalize_partial/convnext_tiny/fold_*/best_model.pth
+!runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_*/best_model.pth
 *.pt
 *.ckpt
 *.onnx

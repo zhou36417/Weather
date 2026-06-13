@@ -1,0 +1,2 @@
+runs/weather4_kfold_generalize_partial/convnext_tiny/fold_*/best_model.pth filter=lfs diff=lfs merge=lfs -text
+runs/weather4_kfold_generalize_partial/efficientnet_b3/fold_*/best_model.pth filter=lfs diff=lfs merge=lfs -text
